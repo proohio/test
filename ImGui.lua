@@ -77,7 +77,7 @@ ImGui.NoWarnings = not IsStudio
 --// Prefabs
 function ImGui:FetchUI()
 	--// Cache check 
-	local CacheName = "DepsoImGui"
+	local CacheName = "ProohioImGui"
 	if _G[CacheName] then
 		self:Warn("Prefabs loaded from Cache")
 		return _G[CacheName]
@@ -90,8 +90,8 @@ function ImGui:FetchUI()
 		local UIAssetId = ImGui.UIAssetId
 		UI = game:GetObjects(UIAssetId)[1]
 	else --// Studio
-		local UIName = "DepsoImGui"
-		UI = PlayerGui:FindFirstChild(UIName) or script.DepsoImGui
+		local UIName = "ProohioImGui"
+		UI = PlayerGui:FindFirstChild(UIName) or script.ProohioImGui
 	end
 
 	_G[CacheName] = UI
