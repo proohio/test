@@ -1393,12 +1393,14 @@ end
 function ImGui:ApplyWindowSelectEffect(Window: GuiObject, TitleBar)
 	local UIStroke = Window:FindFirstChildOfClass("UIStroke")
 
+	BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
 	local Colors = {
 		Selected = {
-			BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			BackgroundColor3 = Color3.fromRGB(128, 0, 0)
 		},
 		Deselected = {
-			BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			BackgroundColor3 = Color3.fromRGB(128, 0, 0)
 		}
 	}
 
