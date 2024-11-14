@@ -1395,7 +1395,7 @@ function ImGui:ApplyWindowSelectEffect(Window: GuiObject, TitleBar)
 
 	local Colors = {
 		Selected = {
-			BackgroundColor3 = TitleBar.BackgroundColor3
+			BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		},
 		Deselected = {
 			BackgroundColor3 = Color3.fromRGB(0, 0, 0)
